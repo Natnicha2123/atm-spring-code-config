@@ -19,4 +19,7 @@ public class ATMConfig {
     public ATM atm(){
         return new ATM(bank());
     }
+
+    @Bean
+    public AtmUI atmUI() {return new AtmUI(atm());}
 }
